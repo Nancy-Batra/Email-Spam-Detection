@@ -1,0 +1,5 @@
+EMAIL SPAM DETECTION RESULTS
+
+Naive Bayes Accuracy : 98.17%
+Logistic Regression Accuracy : 98.43%
+Best Model : Logistic Regression
