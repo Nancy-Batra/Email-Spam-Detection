@@ -37,7 +37,6 @@ The dataset is a CSV file containing email messages and their corresponding labe
 - Matplotlib
 - Tkinter
 - Pickle
-- 
 
 ## Workflow
 
