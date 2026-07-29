@@ -18,7 +18,7 @@ The best-performing model is automatically selected, saved using Pickle and used
 The dataset is a CSV file containing email messages and their corresponding labels. Each email is classified into one of two categories:
 - Spam (1)
 - Not Spam (0)
-- 
+
 **Example:**
 
 | Text                                                              | Label    |
