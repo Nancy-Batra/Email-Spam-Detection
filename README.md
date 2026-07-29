@@ -3,31 +3,29 @@ This is a Machine Learning project that classifies emails as Spam or Not Spam. T
 
 The best-performing model is automatically selected, saved using Pickle and used in a Tkinter GUI for the email prediction.
 
----
-
 ## Features
 
 - Email text preprocessing
 - TF-IDF feature extraction
 - Naive Bayes classifier
 - Logistic Regression classifier
-- Automatic model comparison
-- Classification Report
-- Confusion Matrix
 - Model Accuracy Comparison
 - Save trained model using Pickle
 - Tkinter GUI for prediction
 
----
-
 ## Dataset
 
-The dataset contains email messages labeled as:
+The dataset is a CSV file containing email messages and their corresponding labels. Each email is classified into one of two categories:
+- Spam (1)
+- Not Spam (0)
+- 
+**Example:**
 
-- Spam
-- Not Spam
+| Text                                                              | Label    |
+| ----------------------------------------------------------------- | -------- |
+| "Congratulations! You've won a free iPhone. Click here to claim." | 1        |
+| "Hi, can we reschedule our meeting to tomorrow?"                  | 0        |
 
----
 
 ## Technologies Used
 
@@ -39,34 +37,7 @@ The dataset contains email messages labeled as:
 - Matplotlib
 - Tkinter
 - Pickle
-
----
-
-## Project Structure
-
-```
-Email-Spam-Detection/
-│
-├── main.py
-├── main.ipynb
-├── gui.py
-├── emails_dataset.csv
-├── spam_model.pkl
-├── tfidf_vectorizer.pkl
-│
-├── results/
-│   ├── naive_bayes_confusion_matrix.png
-│   ├── logistic_regression_confusion_matrix.png
-│   ├── model_comparison.png
-│   ├── classification_report.txt
-│   └── model_results.txt
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-
----
+- 
 
 ## Workflow
 
@@ -81,21 +52,15 @@ Email-Spam-Detection/
 9. Save the best model using Pickle
 10. Predict emails using the Tkinter GUI
 
----
-
 ## Results
 
 ### Naive Bayes
-
 - Accuracy: **98.17%**
 
 ### Logistic Regression
-
 - Accuracy: **98.43%**
 
 Logistic Regression achieved the highest accuracy and was selected as the final model.
-
----
 
 ## GUI
 
@@ -106,29 +71,6 @@ The GUI allows users to:
 - Display prediction probabilities
 - Clear the input
 
----
-
-## How to Run
-
-### Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Train the model
-
-```bash
-python main.py
-```
-
-### Launch the GUI
-
-```bash
-python gui.py
-```
-
----
 
 ## Future Improvements
 
@@ -137,8 +79,3 @@ python gui.py
 - Deploy as a web application
 - Improve prediction confidence visualization
 
----
-
-## Author
-
-Nancy Batra
